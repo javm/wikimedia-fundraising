@@ -1,0 +1,7 @@
+USE  exchange;
+CREATE TABLE IF NOT EXISTS exchange_rates(
+       currency VARCHAR(10),
+       rate DOUBLE,
+       ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP) ENGINE=InnoDB;
+
+ALTER TABLE exchange_rates ADD PRIMARY KEY(currency);
