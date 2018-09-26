@@ -5,7 +5,7 @@ It uses Mysql and php 7.2.8
 
 a) Create a db with name 'exchange'
 
-b) Grant write and read permisions to user 'wikimedia'
+b) Grant write and read permissions to user 'wikimedia'
 
 c) Create the table:
 
