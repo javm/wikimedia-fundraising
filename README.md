@@ -41,3 +41,15 @@ output: array( 'USD 65.63', 'USD 3.27' )
 (This can be a separate function from #4.)
 
 
+# TODO (Comments)
+1. The XML service is hardcoded in the code and also the db and
+credentials, this could have been written in some configuration file, or the
+service url can have been a parameter.
+
+2. If the user asks for a currency not in the db, the script throws an
+exception, even in the case when the input is an array, this could be
+skipped and go with the rest of currencies in the list.
+
+3. Would have been nice to get the input from a CSV file for a big
+number of input values.
+
